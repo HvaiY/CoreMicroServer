@@ -1,0 +1,8 @@
+consul ：生产环境比较复杂 是一个服务的中心，需要集群
+
+开发环境 使用：cmd 运行命令 consul.exe agent -dev (需要再consul的所在目录运行)
+-----
+ 运行之后 可以看到服务监控页面为：http://127.0.0.1:8500
+ 
+ //--Consul 在.net 中使用  ：Install-Package Consul (NuGet到对应的程序中)
+ dotnet MsgService.dll -p 127.0.0.1 -port 6001
