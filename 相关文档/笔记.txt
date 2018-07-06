@@ -6,3 +6,11 @@ consul ：生产环境比较复杂 是一个服务的中心，需要集群
  
  //--Consul 在.net 中使用  ：Install-Package Consul (NuGet到对应的程序中)
  dotnet MsgService.dll -p 127.0.0.1 -port 6001
+
+ --服务注册/注销到Consul  --服务从客户端发现和治理 --(Consul 具体 Demo ) 
+
+ --出现服务丢失(服务挂了) 那么 处理方式是  熔断降级
+ --熔断降级(Polly)
+     官网：https://github.com/App-vNext/Polly
+     介绍文章：https://www.cnblogs.com/CreateMyself/p/7589397.html
+      Install-Package Polly -Version 6.0.1
