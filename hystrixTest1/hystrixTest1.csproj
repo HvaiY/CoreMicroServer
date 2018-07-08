@@ -5,10 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AspectCore.Core" Version="0.5.0" />
-    <PackageReference Include="Consul" Version="0.7.2.4" />
+    <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="0.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+    <PackageReference Include="RuPeng.HystrixCore" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>
