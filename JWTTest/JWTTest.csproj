@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ocelot" Version="7.0.8" />
-    <PackageReference Include="Polly" Version="6.0.1" />
+    <PackageReference Include="JWT" Version="4.0.0" />
   </ItemGroup>
 
 </Project>
