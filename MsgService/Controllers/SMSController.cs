@@ -19,6 +19,11 @@ namespace MsgService.Controllers
         {
             Console.WriteLine($"通过联想短信接口向{model.PhoneNum}发送短信{model.Msg}");
         }
+        [HttpGet("Send")]
+        public void Send(string msg)
+        {
+            Console.WriteLine($"接收到消息：{msg}");
+        }
 
         [HttpPost(nameof(Send_HW))]
         public void Send_HW(SendSMSRequest model)
