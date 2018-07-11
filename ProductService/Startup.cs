@@ -25,6 +25,8 @@ namespace ProductService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //连接到用户验证的 Identity  identity服务端已完成，本服务需要配合使用
+            //Install-Package IdentityServer4.AccessTokenValidation
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddAuthentication("Bearer")
        .AddIdentityServerAuthentication(options =>
